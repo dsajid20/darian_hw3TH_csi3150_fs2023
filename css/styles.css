@@ -1,0 +1,300 @@
+
+
+/*Reset all browser styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-snap-type: y mandatory;
+  }
+  
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  body {
+    --heading-color: #ffc91f;
+    --other-color: #ffffff;
+  }
+  
+  .slides {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .vertical-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+  }
+  
+  .side-by-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-column {
+    width: 50%;
+    padding: 25px;
+  }
+  
+  .left-column {
+    width: 50%;
+    padding: 25px;
+  }
+  
+  
+  #slide-one {
+    background-image: url(../assets/Alaska-Beginning.jpg);
+    height: 100vh;
+  }
+  
+  #main-title {
+    font-size: 8rem;
+    color: var(--heading-color);
+  }
+  
+  #main-subheading {
+    font-size: 1.2rem;
+    color: var(--other-color);
+  }
+  
+  .down-arrow {
+    cursor: pointer;
+  }
+  
+  .down-arrow:hover img {
+    transform: scale(0.5);
+  }
+  
+  #slide-two {
+    background-image: url(../assets/Mountian.jpeg);
+    padding: 100px;
+  }
+  
+  .text p {
+    font-size: 1.8rem;
+    padding: 20px;
+    color: var(--other-color);
+  }
+  
+  .page-title {
+    font-size: 4rem;
+    color: var(--heading-color);
+  }
+  
+  .read-more-btn {
+    background-color: var(--heading-color);
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    margin-left: 25px;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #ffd757;
+  }
+  
+  #slide-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/Mountian-2.webp);
+    padding: 100px;
+  }
+  
+  .tours-gallery-container {
+    padding: 4rem;
+    display: flex;
+    column-gap: 25px;
+  }
+  
+  .tour-image {
+    position: relative;
+  }
+  
+  .img-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 10%;
+    left: 30px;
+    font-size: 1.3rem;
+    color: var(--other-color);
+  }
+  .img-text .image-arrow {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .img-text .image-arrow:hover {
+    transform: scale(0.9);
+  }
+  
+  .tours-gallery-container img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  #slide-four {
+    background-image: url(../assets/Mountain-3.jpeg);
+  }
+  
+  .subheading {
+    font-size: 3rem;
+  }
+
+  #slide-five {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/Mountain-4.webp);
+  }
+  
+  .bubble-container {
+
+    display: flex;
+    padding: 100px;
+    column-gap: 100px;
+  }
+  
+  .bubble-container p {
+    text-align: center;
+    transform: translateY(90px);
+  }
+  
+  .bubble-container .bubble {
+    background-color: #000;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  
+  .stat-number {
+    color: var(--heading-color);
+    font-size: 5rem;
+  }
+  
+  .bubble-subheading {
+    color: var(--other-color);
+    font-size: 1.5rem;
+  }
+  
+  #slide-six {
+    background-image: url(../assets/House.jpeg);
+    padding: 100px;
+  }
+  
+  .person-container img {
+    border-radius: 100%;
+  }
+  
+  .person-text-container {
+    color: var(--other-color);
+    text-align: center;
+    width: 700px;
+  }
+  
+  .person-quote {
+    font-size: 2rem;
+  }
+  
+  .person-name {
+    font-size: 2.5rem;
+    padding-top: 25px;
+  }
+  
+  .gallery-container {
+    position: relative;
+  }
+  
+  .gallery-images {
+    display: flex;
+  }
+  
+  .gallery-images img {
+    width: 25%;
+    object-fit: cover;
+  }
+  
+  .gallery-container a {
+    position: absolute;
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--heading-color);
+    transform: translateY(-150px);
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .right-arrow {
+    right: 0;
+  }
+  
+  .gallery-container a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  #contact-slide {
+    background-image: url(../assets/Glaciers.jpeg);
+    padding: 100px;
+  }
+  
+  .contact-container {
+    text-align: left;
+    font-size: 1.5rem;
+    color: var(--other-color);
+  }
+  
+  .social-icons-container {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  input {
+    width: 500px;
+    height: 30px;
+    background-color: transparent;
+    font-size: 1.4rem;
+    border-color: var(--other-color);
+    border-width: 2px;
+    color: var(--other-color);
+  }
+  
+  textarea {
+    width: 500px;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: var(--other-color);
+    border-color: var(--other-color);
+    border-width: 2px;
+  }
+  
+  ::placeholder {
+    color: var(--other-color);
+  }
+  
+  .submit-button {
+    background-color: var(--heading-color);
+    margin-top: 10px;
+    color: black;
+  }
+  
+  .submit-button:hover {
+    cursor: pointer;
+  }
